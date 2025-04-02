@@ -1,0 +1,65 @@
+# Validação de CPF
+
+Este projeto implementa uma função para validar CPFs brasileiros de acordo com as regras oficiais. Além disso, há testes unitários para garantir a correta funcionalidade.
+
+## Estrutura do Projeto
+
+```
+aulaAngelo/
+│── app/
+│   ├── validacao.py  # Implementação da validação de CPF
+│── tests/
+│   ├── __init__.py   # Necessário para reconhecer como um pacote Python
+│   ├── tests_validacao.py  # Arquivo de testes unitários
+```
+
+## 📌 Instalação
+
+Certifique-se de ter o Python instalado. Para rodar os testes, você pode clonar este repositório e instalar os requisitos (se houver):
+
+```sh
+git clone https://github.com/a-mandaflores/angeloProvaQa
+cd aulaAngelo
+```
+
+## 🚀 Como Usar
+
+### Executando a validação manualmente:
+
+Abra um terminal e execute o interpretador Python:
+
+```sh
+python
+```
+
+Depois, importe a função e teste:
+
+```python
+from app.validacao import validar_cpf
+print(validar_cpf("529.982.247-25"))  # Deve retornar True ou False
+```
+
+### 🧪 Rodando os Testes Unitários
+
+Para rodar todos os testes, use:
+
+```sh
+python -m unittest discover tests
+```
+
+Ou execute um teste específico:
+
+```sh
+python -m unittest tests.tests_validacao
+```
+
+Se estiver com problemas de importação, certifique-se de que está no diretório correto (`aulaAngelo/`) antes de executar os comandos.
+
+## 🛠 Tecnologias Utilizadas
+- Python 3.11
+- `unittest` para testes unitários
+
+## 📄 Licença
+
+Este projeto é de uso livre. Sinta-se à vontade para modificar e contribuir! 🚀
+
